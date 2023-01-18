@@ -1,4 +1,4 @@
-import PropTypes, { arrayOf } from 'prop-types';
+import PropTypes from 'prop-types';
 import css from './Statistics.module.css';
 
 export const Statistics = ({ title, stats }) => {
@@ -10,7 +10,7 @@ export const Statistics = ({ title, stats }) => {
         {stats.map(stat => (
           <li className={css.item} key={stat.id}>
             <span className={css.label}>{stat.label}</span>
-            <span className={css.percentage}>{stat.percentage}%</span>
+            <span className={css.percentage}>{stat.pecentage}%</span>
           </li>
         ))}
       </ul>
