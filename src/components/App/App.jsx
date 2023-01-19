@@ -3,10 +3,10 @@ import { Statistics } from 'components/Statistics/Statistics';
 import { FriendList } from 'components/FriendList/FriendList';
 import { TransactionHistory } from 'components/TransactionHistory/TransactionHistory';
 
-import profile from '../user.json';
-import data from '../data.json';
-import friends from '../friends.json';
-import transactions from '../transactions';
+import profile from '../data/user.json';
+import data from '../data/data.json';
+import friends from '../data/friends.json';
+import transactions from '../data/transactions.json';
 
 import css from './App.module.css';
 
@@ -22,7 +22,7 @@ export const App = () => {
       />
       <Statistics title="Upload stats" stats={data} />
       <FriendList friends={friends} />
-      ,<TransactionHistory items={transactions} />
+      <TransactionHistory items={transactions} />
     </div>
   );
 };
